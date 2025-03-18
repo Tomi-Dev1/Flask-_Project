@@ -1,0 +1,34 @@
+/* Fun Hover Effect */
+.fun-box {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.fun-box:hover {
+    transform: scale(1.1);
+}
+/* Makes a box (.fun-box) look smooth and round with curved corners.
+When the user hovers their mouse over it, the box grows slightly (110% bigger).
+The transition makes sure the effect is smooth, not instant. */
+/* Animated Pop Effect */
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.animate-pop {
+    animation: pop 1s ease-out;
+}
+/* This makes something "pop" onto the screen when it appears.
+It starts small and invisible (scale(0.8), opacity: 0).
+Then it grows to full size and becomes fully visible (scale(1), opacity: 1).
+1s ease-out means the animation lasts 1 second and slows down at the end. */
+/* Center Text */
+.text-center {
+    text-align: center;
+}
+/* Makes text stay in the middle of its section. */
+/* Add Some Space */
+.mt-5 {
+    margin-top: 50px;
+}
+/* Adds 50 pixels of empty space at the top of an element.
+This helps separate things on the page so they don’t look too close together. */
