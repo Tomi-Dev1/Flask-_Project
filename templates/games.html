@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- <!DOCTYPE html> → Tells the browser this is an HTML5 document.
-    <html lang="en"> → Says that the page is written in English. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balloon Pop Game</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+<body class="games-page">
+    <div class="container text-center mt-5">
+        <h1 class="text-danger">Pop the Balloon!</h1>
+        <button id="balloon" class="btn btn-lg btn-success my-balloon-btn">🎈 Click Me!</button>
+    </div>
+    <script src="{{ url_for('static', filename='games.js') }}"></script>
+</body>
+</html>
+
+
+
+    <!-- <!DOCTYPE html> → Tells the browser this is an HTML5 document.
+    <html lang="en"> → Says that the page is written in English. -->
+
 <!-- <meta charset="UTF-8"> → Supports special characters and emojis 🎈.
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> → Makes the page responsive, so it looks good on phones 📱 and computers 💻.
 <title>Balloon Pop Game</title> → Sets the title of the page (this appears on the browser tab).
 <link> → Adds Bootstrap, which makes the page look better and more stylish. -->
-<body>
-    <div class="container text-center mt-5">
-        <h1 class="text-danger">Pop the Balloon!</h1>
-        <button id="balloon" class="btn btn-lg btn-primary">🎈 Click Me!</button>
-    </div>
+
 <!-- <div class="container text-center mt-5"> → A box that centers everything.
     <h1 class="text-danger">Pop the Balloon!</h1>
     <h1> → Displays a big heading.
@@ -25,8 +34,6 @@
     <button> → A big button that says "Click Me!" with a balloon emoji.
     id="balloon" → Gives the button an ID so JavaScript can find it later.
     class="btn btn-lg btn-primary" → Makes the button large (btn-lg) and blue (btn-primary) using Bootstrap. -->
-<script src="{{ url_for('static', filename='games.js') }}"></script>
-</body>
-</html>
-<!-- <script> → Loads JavaScript code from a file called games.js.
+
+<!-- <script> → Loads JavaScript code from the file called games.js.
 url_for('static', filename='games.js') → Flask finds the JavaScript file inside the static folder. -->

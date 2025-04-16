@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Playlist</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="videos-page">
     <div class="container text-center mt-5">
         <h1 class="text-warning">Watch Fun Videos!</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MdsoTowfFvY?si=x4Gmh_RfMSp5CPVU" frameborder="0" allowfullscreen></iframe>
     </div>
 </body>
 </html>
+

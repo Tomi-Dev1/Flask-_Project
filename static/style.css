@@ -1,4 +1,104 @@
-/* Fun Hover Effect */
+/* General Background Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Homepage Background */
+.homepage {
+    background-color: #e248a2 !important;
+}
+
+/* Games Page Background */
+.games-page {
+    background-color: #a1f1ac !important;
+}
+
+/* Music Page Background */
+.music-page {
+    background-color: #f3d49b !important;
+}
+
+/* Videos Page Background */
+.videos-page {
+    background-color: #a8ceec !important;
+}
+
+/* Homepage Heading and Explore Text */
+.my-special-title {
+    color: #2ff0e0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.explore-text {
+    font-weight: bold;
+    color: #073d47;
+    margin-bottom: 30px;
+}
+
+/* Homepage Button Styles */
+.homepage .btn-success {
+    background-color: #41d19a;
+    border-color: #105e21;
+    color: #fff;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.homepage .btn-success:hover,
+.homepage .btn-success:focus {
+    background-color: #2bbf7e;
+    border-color: #0f3b25;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+.homepage .btn-info {
+    background-color: #2ff0e0;
+    border-color: #0e7f7a;
+    color: #073d47;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.homepage .btn-info:hover,
+.homepage .btn-info:focus {
+    background-color: #1bc9b4;
+    border-color: #0e7f7a;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+.homepage .btn-warning {
+    background-color: #f6d860;
+    border-color: #023019;
+    color: #6d6204;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.homepage .btn-warning:hover,
+.homepage .btn-warning:focus {
+    background-color: #ffe066;
+    border-color: #bfae2d;
+    color: #fff;
+    transform: scale(1.06);
+}
+.my-balloon-btn:hover, .my-balloon-btn:focus {
+    background-color: #db5757; 
+    border-color: #b2c4b3;
+    color: #fff;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+/* General Button Hover Effect for All Pages */
+.btn, button, input[type="submit"], input[type="button"] {
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.btn:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover,
+.btn:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus {
+    filter: brightness(0.93);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+/* Fun Hover Effect for Boxes */
 .fun-box {
     border-radius: 15px;
     transition: transform 0.3s ease-in-out;
@@ -6,9 +106,7 @@
 .fun-box:hover {
     transform: scale(1.1);
 }
-/* Makes a box (.fun-box) look smooth and round with curved corners.
-When the user hovers their mouse over it, the box grows slightly (110% bigger).
-The transition makes sure the effect is smooth, not instant. */
+
 /* Animated Pop Effect */
 @keyframes pop {
     0% { transform: scale(0.8); opacity: 0; }
@@ -17,18 +115,41 @@ The transition makes sure the effect is smooth, not instant. */
 .animate-pop {
     animation: pop 1s ease-out;
 }
+
+/* Balloon Pop Animation */
+@keyframes pop-effect {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+}
+.pop-animation {
+    animation: pop-effect 0.5s ease-out;
+}
+
+/* Center Text */
+.text-center {
+    text-align: center;
+}
+
+/* Add Some Space */
+.mt-5 {
+    margin-top: 50px;
+}
+
+
+
+/* Makes a box (.fun-box) look smooth and round with curved corners.
+When the user hovers their mouse over it, the box grows slightly (110% bigger).
+The transition makes sure the effect is smooth, not instant. */
+/* Animated Pop Effect */
+
 /* This makes something "pop" onto the screen when it appears.
 It starts small and invisible (scale(0.8), opacity: 0).
 Then it grows to full size and becomes fully visible (scale(1), opacity: 1).
 1s ease-out means the animation lasts 1 second and slows down at the end. */
 /* Center Text */
-.text-center {
-    text-align: center;
-}
+
 /* Makes text stay in the middle of its section. */
 /* Add Some Space */
-.mt-5 {
-    margin-top: 50px;
-}
+
 /* Adds 50 pixels of empty space at the top of an element.
 This helps separate things on the page so they don’t look too close together. */
